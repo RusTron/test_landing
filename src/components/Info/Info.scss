@@ -1,0 +1,172 @@
+.info{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  height: 125px;
+  position: relative;
+
+  &__logo {
+    width: 326px;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 7px;
+  }
+
+  &__contacts {
+    display: flex;
+    width: 575px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 3px;
+    padding-left: 18px;
+  }
+
+  &__contacts-numbers{
+    display: inline-block;
+    background-color: #F5F5F5;
+    padding-bottom: 2px;
+    height: 49px;
+    line-height: 49px;
+    padding-left: 9px;
+    vertical-align: center;
+    padding-right: 5px;
+  }
+
+  &__contacts-number{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    vertical-align: center;
+    padding-right: 40px;
+    letter-spacing: normal;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__contacts-button {
+    border: none;
+    background-color: #FF8900;
+    color: #fff;
+    height: 49px;
+    width: 197px;
+  }
+
+  &__chosenGoods{
+    display: flex;
+    margin-left: 84px;
+    padding-bottom: 19px;
+  }
+
+  &__chosenGoods-item {
+    width: 114px;
+    height: 100%;
+    display: block;
+    position: relative;
+    border-right: #dadada solid 2px;
+    padding-top: 22px;
+    margin-left: 0px;
+  }
+
+  &__chosenGoods-image{
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__chosenGoods-icon{
+    position: absolute;
+    top: -5px;
+    right: 38px;
+  }
+
+  &__chosenGoods-text{
+    color: #3d3d3d;
+    font-family: Roboto;
+    font-size: 10px;
+  }
+
+  &__chosenGoods-amount {
+    position: absolute;
+    top: -4px;
+    color: #fff;
+    z-index: 1;
+    font-size: 11px;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 19px;
+
+  &-text {
+    font-family: "Myriad Pro";
+    font-size: 12px;
+    margin-left: 7px;
+  }
+}
+
+.call{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: auto;
+  outline: 0;
+  height: 100%;
+  background-color: rgba(0,0,0,.45);
+
+  &__form {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 300px;
+  }
+
+  &__form-input{
+    font-size: 22px;
+    height: 40px;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border: none;
+    border: 1px solid #FF8900;
+    border-radius: 5px;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  &-submit{
+    width: 320px;
+    background-color: white;
+    color: black;
+    border: 2px solid #FF8900;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto, san-serif';
+    margin: 10px 0;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #FF8900;
+      color: white;
+    }
+  }
+}
