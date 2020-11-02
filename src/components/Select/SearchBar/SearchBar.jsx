@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import './SearchBar.scss';
 
 export const SearchBar = () => {
@@ -6,8 +6,7 @@ export const SearchBar = () => {
   const [query, setQuery] = useState('');
 
   const findItem = (e) => {
-    debugger;
-    console.log(e);
+    e.preventDefault();
     if(query.length < 2  && e) {
       setError(true);
 
@@ -42,12 +41,12 @@ export const SearchBar = () => {
         <select 
           name="searchBar"
           id="searchBar"
-          className="search__form-select select"
+          className="search__form-select"
         >
-          <option value="Все категории" className="select-item">Все категории</option>
-          <option value="Опция 1" className="select-item">Опция 1</option>
-          <option value="Опция 2" className="select-item">Опция 2</option>
-          <option value="Опция 3" className="select-item">Опция 3</option>
+          <option value="Все категории">Все категории</option>
+          <option value="Опция 1">Опция 1</option>
+          <option value="Опция 2">Опция 2</option>
+          <option value="Опция 3">Опция 3</option>
         </select>
         <button type="submit" className="search__form-submit">Поиск</button>
       </form>

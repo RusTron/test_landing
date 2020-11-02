@@ -1,0 +1,150 @@
+.selectBlock{
+  width: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+
+  &__body {
+    background-color: #696969;
+    height: 300px;
+    box-sizing: border-box;
+  }
+}
+
+.selects {
+  padding: 24px 34px 0 36px;
+  width: auto;
+}
+
+.row1{
+  width: 281px;
+  height: 44px;
+  padding: 3px 4px;
+  background-color: #fff;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+
+  &__tab{
+    width: 135px;
+    padding-top: 11px;
+    cursor: pointer;
+  }
+}
+
+.activeTab{
+  background-color: #ff8900;
+  color: #fff;
+  transition: .3s;
+}
+
+.row2 {
+  margin-top: 23px;
+  display: flex;
+
+  &__select{
+    margin-right: 20px;
+  }
+}
+
+.row3 {
+  margin-top: 23px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: 15px;
+
+  &__select{
+    margin-right: 20px;
+  }
+}
+
+.row4{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 25px;
+
+  & > button{
+    height: 100%;
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+    border: none;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    outline-color: #ff8900;
+  }
+  
+  &__filter{
+    background-color:#ff4800;
+
+    &:hover{
+      background-color: #ff8900;
+    }
+  }
+
+  &__button{
+    background-image: linear-gradient(to right, #ff8500 0%, #ffae00 100%);
+
+    &:hover{
+      background-image: linear-gradient(to right, #ffae00 0%, #fff 100%);
+      color: #000;
+    }
+  }
+
+  &__filter-text {
+    padding-left: 13px;
+  }
+
+  &__button-text{
+    font-weight: 700;
+  }
+}
+
+.selectField{
+  width: 222px;
+  height: 40px;
+  padding: 13px 0 13px 15px;
+  border: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #ff8900 50%),
+    linear-gradient(135deg, #ff8900 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1.2em + 2px),
+    calc(100% - 15px) calc(1.2em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    4.5em 4.5em;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+.price{
+  width: 222px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+
+  &-text{
+    margin-right: 26px;
+    color: #fff;
+    font-family: "Proxima Nova", sans-serif;
+  }
+
+  &-input{
+    box-sizing: border-box;
+    height: 100%;
+    width: 74px;
+    margin-right: 13px;
+    border: none;
+    outline: none;
+    padding: 0 0 0 10px;
+  }
+}

@@ -1,0 +1,46 @@
+.linksBlock{
+  background-color: #606a76;
+  height: 72px;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    padding-left: 26px;
+    height: 100%;
+    align-items: center;
+    margin: 20px 0 0;
+  }
+
+  &__list-item{
+    display: inline-block;
+    box-sizing: content-box;
+    height: 100%;
+    width: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__list-link{
+    text-decoration: none;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 13px;
+  }
+
+  &__list-image{
+
+    color: #fff;
+    fill: #fff;
+  }
+}
+
+.activeLink {
+  border-bottom: 2px solid yellow;
+  transition: .5s;
+}
