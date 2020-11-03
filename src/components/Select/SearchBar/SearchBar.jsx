@@ -50,7 +50,6 @@ export const SearchBar = () => {
         </select>
         <button type="submit" className="search__form-submit">Поиск</button>
       </form>
-
     </div>
   );
 }

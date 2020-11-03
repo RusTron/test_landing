@@ -19,8 +19,7 @@ export const SelectBlock = () => {
 
   const submitForm = (event) => {
     event.preventDefault();
-    debugger;
-    console.log(event.nativeEvent.submitter)
+
     if(event.nativeEvent.submitter.className.includes('filter')){
       clearFilter(event);
     }

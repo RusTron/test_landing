@@ -60,7 +60,6 @@ export const NavBar = () => {
           <li className="nav__list-item">
             <NavLink 
               to={'/link2'}
-              exact={true}
               className={'nav__list-link'}
               activeClassName={'nav__active-link'}
             >
@@ -70,7 +69,6 @@ export const NavBar = () => {
           <li className="nav__list-item">
             <NavLink 
               to={'/link3'}
-              exact={true}
               className={'nav__list-link'}
               activeClassName={'nav__active-link'}
             >

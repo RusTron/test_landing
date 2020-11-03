@@ -4,12 +4,11 @@ import classNames from 'classnames';
 import './Menu.scss';
 
 export const Menu = () => {
-  const [ openedMenu, setOpenedMenu] = useState(false)
+  const [ openedMenu, setOpenedMenu ] = useState(false)
   return(
     <div className="menu">
       <div 
         className="menu__header"
-        // onClick={()=> setOpenedMenu(!openedMenu)}
       >
         <div 
           className={classNames("menu__header-burger", {"open": openedMenu})}

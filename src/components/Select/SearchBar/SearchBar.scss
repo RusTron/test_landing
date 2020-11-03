@@ -64,5 +64,10 @@
     font-weight: 700;
     outline-color: #616161;
     cursor: pointer;
+    transition: .5s;
+
+    &:hover{
+      background-color: #ff4800;
+    }
   }
 }

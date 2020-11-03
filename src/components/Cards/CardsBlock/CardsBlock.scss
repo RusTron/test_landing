@@ -1,0 +1,213 @@
+.card{
+  border: 1px solid #dbdbdb;
+  padding: 20px 9px 0 18px;
+  max-width: 346px;
+  text-align: start;
+  box-sizing: border-box;
+
+  &__label{
+    display: inline-block;
+    background-color: #f2f2f2;
+    color: #848484;
+    font-weight: 300;
+    padding: 5px 23px;
+  }
+
+  &__title{
+    margin: 20px 0 16px;
+    color: #3b3b3b;
+    cursor: pointer;
+    height: 40px;
+  }
+
+  &__title-text{
+    font-size: 17px;
+    line-height: 26px;
+    text-decoration: underline;
+  }
+
+  &__feedback {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__feedback-stars {
+    display: inline-block;
+  }
+
+  &__feedback-list{
+    font-size: 13px;
+    line-height: 26px;
+    margin-left: 5px;
+  }
+
+  &__feedback-link {
+    color: #9b9b9b;
+  }
+
+  &__feedback-amount{
+    display: inline-block;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 12px;
+  }
+
+  &__images{
+    margin-top: 26px;
+    display: flex;
+    height: 236px;
+  }
+
+  &__images-icons{
+    max-width: 53px;
+  }
+
+  &__properties{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 51px;
+  }
+
+  &__properties-item{
+    position: relative;
+  }
+
+  &__properties-item:after{
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    left: 26px;
+    top: 12px;
+  }
+
+  &__properties-new:after{
+    content: 'Новинка';
+  }
+
+  &__properties-hit:after{
+    content: 'Хит';
+    left: 37px;
+  }
+
+  &__properties-sale:after{
+    content: 'Скидка';
+    left: 30px;
+  }
+
+  &__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price-actual{
+    color: #3b3b3b;
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+  }
+
+  &__price-grn{
+    font-size: 21px;
+    letter-spacing: 0.9px;
+  }
+
+  &__price-old{
+    color: #989898;
+    font-family: "Roboto Black Italic", sans-serif;
+    font-size: 16px;
+    text-decoration: line-through #e00000;
+  }
+
+  &__buy{
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__buy-button{
+    width: 210px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #ff8500 0%, #ffae00 100%);
+    cursor: pointer;
+
+    &:hover{
+      background-image: linear-gradient(to right, #d36e00 0%, #e59100 100%);
+    }
+  }
+
+  &__buy-text{
+    color: white;
+    font-weight: 700;
+    padding-left: 15px;
+  }
+
+  &__select{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 16px -10px;
+  }
+
+  &__select-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__select-text{
+    padding-left: 11px;
+    color: #3b3b3b;
+    font-family: Roboto, sans-serif;
+    text-decoration: underline;
+  }
+}
+
+.stars {
+
+  &-item {
+    padding-right: 5px;
+  }
+}
+
+.cardIcon {
+  max-width: 53px;
+  display: flex;
+  flex-direction: column;
+
+  &__item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 19px;
+  }
+
+  &__item-image{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+
+  &__item-text{
+    color: #91959a;
+    font-size: 10px;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.cardImage1{
+  margin-left: 30px;
+}
