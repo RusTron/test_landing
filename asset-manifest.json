@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test_landing/static/css/main.9eab71dc.chunk.css",
+    "main.css": "/test_landing/static/css/main.b3a1ebb8.chunk.css",
     "main.js": "/test_landing/static/js/main.b983ef53.chunk.js",
     "main.js.map": "/test_landing/static/js/main.b983ef53.chunk.js.map",
     "runtime-main.js": "/test_landing/static/js/runtime-main.c00c5a0b.js",
@@ -10,7 +10,7 @@
     "static/js/3.3ab2fc6e.chunk.js": "/test_landing/static/js/3.3ab2fc6e.chunk.js",
     "static/js/3.3ab2fc6e.chunk.js.map": "/test_landing/static/js/3.3ab2fc6e.chunk.js.map",
     "index.html": "/test_landing/index.html",
-    "static/css/main.9eab71dc.chunk.css.map": "/test_landing/static/css/main.9eab71dc.chunk.css.map",
+    "static/css/main.b3a1ebb8.chunk.css.map": "/test_landing/static/css/main.b3a1ebb8.chunk.css.map",
     "static/js/2.e266058a.chunk.js.LICENSE.txt": "/test_landing/static/js/2.e266058a.chunk.js.LICENSE.txt",
     "static/media/wheel-1.25758850.png": "/test_landing/static/media/wheel-1.25758850.png",
     "static/media/wheel-2.39089913.png": "/test_landing/static/media/wheel-2.39089913.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.c00c5a0b.js",
     "static/js/2.e266058a.chunk.js",
-    "static/css/main.9eab71dc.chunk.css",
+    "static/css/main.b3a1ebb8.chunk.css",
     "static/js/main.b983ef53.chunk.js"
   ]
 }
