@@ -104,7 +104,7 @@
   &__chosenGoods-icon{
     position: absolute;
     top: -5px;
-    right: 38px;
+    right: 41px;
 
     @media(max-width: 1360px){
       right: 24px;
@@ -119,6 +119,7 @@
 
   &__chosenGoods-amount {
     position: absolute;
+    left: 53px;
     top: -4px;
     color: #fff;
     z-index: 1;

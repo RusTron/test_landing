@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { CountContext } from '../../../context/CountContext';
 import car from '../../../images/icons/car-passanger.png';
 import sun from '../../../images/icons/sun.png';
 import newIcon from '../../../images/icons/new.png';
@@ -17,7 +18,12 @@ import wheel3 from '../../../images/wheel-3.png';
 import wheel4 from '../../../images/wheel-4.png';
 import './CardsBlock.scss';
 
+
 export const CardsBlock = () => {
+  const { buyCount, setBuyCount } = useContext(CountContext);
+  const { compareCount, setCompareCount } = useContext(CountContext);
+  const { chosenCount, setChosenCount } = useContext(CountContext);
+
   return(
     <div className="cards__block">
 
@@ -84,19 +90,28 @@ export const CardsBlock = () => {
           <span className="card__price-old">1 250 ГРН.</span>
         </div>
         <div className="card__buy">
-          <button className="card__buy-button">
+          <button 
+            className="card__buy-button"
+            onClick={() => setBuyCount(buyCount + 1)}
+          >
             <img src={cardBasket} alt="" className="card__buy-icon"/>
             <span className="card__buy-text">КУПИТЬ ТОВАР</span>
           </button>
         </div>
         <div className="card__select">
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setCompareCount(compareCount + 1)}
+          >
             <img src={cardCompare} alt="" className="card__select-compareImage"/>
             <span className="card__select-text">Сравнить товар</span>
           </button>
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setChosenCount(chosenCount + 1)}
+          >
             <img src={cardStar} alt="" className="card__select-star"/>
-            <span className="card__select-text">Сравнить товар</span>
+            <span className="card__select-text">В избранное</span>
           </button>
         </div>
       </div>
@@ -157,19 +172,28 @@ export const CardsBlock = () => {
           <span className="card__price-old">1 250 ГРН.</span>
         </div>
         <div className="card__buy">
-          <button className="card__buy-button">
+          <button 
+            className="card__buy-button"
+            onClick={() => setBuyCount(buyCount + 1)}
+          >
             <img src={cardBasket} alt="" className="card__buy-icon"/>
             <span className="card__buy-text">КУПИТЬ ТОВАР</span>
           </button>
         </div>
         <div className="card__select">
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setCompareCount(compareCount + 1)}
+          >
             <img src={cardCompare} alt="" className="card__select-compareImage"/>
             <span className="card__select-text">Сравнить товар</span>
           </button>
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setChosenCount(chosenCount + 1)}
+          >
             <img src={cardStar} alt="" className="card__select-star"/>
-            <span className="card__select-text">Сравнить товар</span>
+            <span className="card__select-text">В избранное</span>
           </button>
         </div>
       </div>
@@ -231,19 +255,28 @@ export const CardsBlock = () => {
           <span className="card__price-old">11 250 ГРН.</span>
         </div>
         <div className="card__buy">
-          <button className="card__buy-button">
+          <button 
+            className="card__buy-button"
+            onClick={() => setBuyCount(buyCount + 1)}
+          >
             <img src={cardBasket} alt="" className="card__buy-icon"/>
             <span className="card__buy-text">КУПИТЬ ТОВАР</span>
           </button>
         </div>
         <div className="card__select">
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setCompareCount(compareCount + 1)}
+          >
             <img src={cardCompare} alt="" className="card__select-compareImage"/>
             <span className="card__select-text">Сравнить товар</span>
           </button>
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setChosenCount(chosenCount + 1)}
+          >
             <img src={cardStar} alt="" className="card__select-star"/>
-            <span className="card__select-text">Сравнить товар</span>
+            <span className="card__select-text">В избранное</span>
           </button>
         </div>
       </div>
@@ -295,19 +328,28 @@ export const CardsBlock = () => {
           </span>
         </div>
         <div className="card__buy">
-          <button className="card__buy-button">
+          <button 
+            className="card__buy-button"
+            onClick={() => setBuyCount(buyCount + 1)}
+          >
             <img src={cardBasket} alt="buy-button" className="card__buy-icon"/>
             <span className="card__buy-text">КУПИТЬ ТОВАР</span>
           </button>
         </div>
         <div className="card__select">
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setCompareCount(compareCount + 1)}
+          >
             <img src={cardCompare} alt="compare-image" className="card__select-compareImage"/>
             <span className="card__select-text">Сравнить товар</span>
           </button>
-          <button className="card__select-button">
+          <button 
+            className="card__select-button"
+            onClick={() => setChosenCount(chosenCount + 1)}
+          >
             <img src={cardStar} alt="chosen-image" className="card__select-star"/>
-            <span className="card__select-text">Сравнить товар</span>
+            <span className="card__select-text">В избранное</span>
           </button>
         </div>
       </div>

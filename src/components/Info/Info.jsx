@@ -1,17 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import NumberFormat from 'react-number-format';
+import { CountContext } from '../../context/CountContext';
 import logo from '../../images/Test.png';
 import phone from '../../images/icons/phone-icon.png';
 import compare from '../../images/icons/compare.png';
 import selected from '../../images/icons/selected.png';
 import basket from '../../images/icons/basket.png';
-import basketAmount from '../../images/icons/basket-amount.png';
+import itemAmount from '../../images/icons/basket-amount.png';
 import './Info.scss';
 
 export const Info = () => {
   const [ query, setQuery ] = useState('');
   const [ modalVisible, setModalVisible ] = useState(false);
-  const [error, setError] = useState(false)
+  const [error, setError] = useState(false);
+
+  const { buyCount, compareCount, chosenCount } = useContext(CountContext);
 
   const addText = (value) => {
     if(error){
@@ -93,16 +96,32 @@ export const Info = () => {
       </div>
       <div className="info__chosenGoods">
         <div className="info__chosenGoods-item">
+        {compareCount !==0 && (
+            <>
+              <span className="info__chosenGoods-amount">{compareCount}</span>
+              <img src={itemAmount} alt="" className="info__chosenGoods-icon"/>
+            </>
+        )}
           <img src={compare} alt="" className="info__chosenGoods-image"/>
           <span className="info__chosenGoods-text">СРАВНЕНИЕ</span>
         </div>
         <div className="info__chosenGoods-item">
+          {chosenCount !== 0 && (
+            <>
+              <span className="info__chosenGoods-amount">{chosenCount}</span>
+              <img src={itemAmount} alt="" className="info__chosenGoods-icon"/>
+            </>
+          )}
           <img src={selected} alt="" className="info__chosenGoods-image"/>
           <span className="info__chosenGoods-text">ИЗБРАННОЕ</span>
         </div>
         <div className="info__chosenGoods-item">
-          <span className="info__chosenGoods-amount">5</span>
-          <img src={basketAmount} alt="" className="info__chosenGoods-icon"/>
+          {buyCount !==0 && (
+            <>
+              <span className="info__chosenGoods-amount">{buyCount}</span>
+              <img src={itemAmount} alt="" className="info__chosenGoods-icon"/>
+            </>
+          )}
           <img src={basket} alt="" className="info__chosenGoods-image"/>
           <span className="info__chosenGoods-text">КОРЗИНА</span>
         </div>

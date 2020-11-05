@@ -11,9 +11,7 @@ export const SearchBar = () => {
       setError(true);
 
       return;
-    } else {
-      setQuery('');
-    }
+    } 
   }
 
   const setSearchValue = (value) => {
