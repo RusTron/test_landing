@@ -2,6 +2,10 @@
   width: 326px;
   position: relative;
 
+  @media(max-width: 1360px){
+    min-width: 210px;
+  }
+
   &__header{
     display: flex;
     width: 100%;

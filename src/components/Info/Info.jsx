@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import NumberFormat from 'react-number-format';
 import logo from '../../images/Test.png';
 import phone from '../../images/icons/phone-icon.png';
 import compare from '../../images/icons/compare.png';
@@ -9,22 +10,34 @@ import './Info.scss';
 
 export const Info = () => {
   const [ query, setQuery ] = useState('');
-  const [ modalVisible, setModalVisible ] = useState(false)
+  const [ modalVisible, setModalVisible ] = useState(false);
+  const [error, setError] = useState(false)
 
   const addText = (value) => {
-    const text = value.replace(/\D/g, '')
-    setQuery(text.trimLeft());
+    if(error){
+      setError(false);
+    }
+  
+    setQuery(value);
   }
 
   const sendForm = (event) => {
     event.preventDefault();
+
+    if(query.length !== 10){
+      setError(true);
+      return;
+    }
+
     setModalVisible(false);
+    setQuery('');
   }
 
   useEffect(() => {
     const handleEsc = (event) => {
        if (event.keyCode === 27) {
-        setModalVisible(false)
+        setModalVisible(false);
+        setQuery('')
       }
     };
     window.addEventListener('keydown', handleEsc);
@@ -56,16 +69,22 @@ export const Info = () => {
             action="#"
             method="post"
             class="call__form"
-            onSubmit={sendForm}
+            onSubmit={(event) => sendForm(event, query)}
           >
-            <input 
-              type="tel"
+            <NumberFormat
+              format="+38 (###) ###-####" 
+              mask="_"
               className="call__form-input"
               placeholder="Введите номер"
               value={query}
-              onChange={({target})=>addText(target.value)}
-              required={query.length <= 6}
+              onValueChange={({value})=> addText(value)}
+              required
             />
+            {error && (
+              <span className="call__form-error">
+                Номер телефона должен содержать минимум 10 символов
+              </span>
+            )}
             <button type="submit" className="call-submit">
               Перезвонить мне
             </button>

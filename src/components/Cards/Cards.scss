@@ -3,6 +3,10 @@
   margin-top: 25px;
   margin-bottom: 61px;
 
+  @media(max-width: 1360px){
+    max-width: 1110px;
+  }
+
   &__header{
     width: 100%;
     display: flex;
@@ -71,5 +75,9 @@
 
   &__block-item{
     border-left: none;
+
+    @media(max-width: 1360px){
+      width: 277px;
+    }
   }
 }

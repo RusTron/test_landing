@@ -3,6 +3,10 @@
   margin-left: 95px;
   display: flex;
 
+  @media(max-width: 1360px){
+    max-width: 565px;
+  }
+
   &__block{
     width: 209px;
     padding: 0;

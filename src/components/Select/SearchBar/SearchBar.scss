@@ -18,6 +18,10 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     position: relative;
+
+    @media(max-width: 1360px){
+      max-width: 565px;
+    }
   }
 
   &__form-error{

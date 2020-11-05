@@ -10,6 +10,11 @@
     display: flex;
     justify-content: flex-start;
     padding-bottom: 7px;
+    margin-left: 10px;
+
+    @media(max-width: 1360px){
+      width: 210px;
+    }
   }
 
   &__contacts {
@@ -18,7 +23,11 @@
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 3px;
-    padding-left: 18px;
+    padding-left: 17px;
+
+    @media(max-width: 1360px){
+      padding-left: 9px;
+    }
   }
 
   &__contacts-numbers{
@@ -42,6 +51,11 @@
     letter-spacing: normal;
     color: #000;
     text-decoration: none;
+
+    @media(max-width: 1360px){
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
 
   &__contacts-button {
@@ -56,6 +70,14 @@
     display: flex;
     margin-left: 84px;
     padding-bottom: 19px;
+
+    @media(max-width: 1360px){
+      margin-left: 30px;
+    }
+
+    & :last-child{
+      border-right: none;
+    }
   }
 
   &__chosenGoods-item {
@@ -66,6 +88,10 @@
     border-right: #dadada solid 2px;
     padding-top: 22px;
     margin-left: 0px;
+
+    @media(max-width: 1360px){
+      max-width: 90px;
+    }
   }
 
   &__chosenGoods-image{
@@ -79,6 +105,10 @@
     position: absolute;
     top: -5px;
     right: 38px;
+
+    @media(max-width: 1360px){
+      right: 24px;
+    }
   }
 
   &__chosenGoods-text{
@@ -119,7 +149,8 @@
   overflow: auto;
   outline: 0;
   height: 100%;
-  background-color: rgba(0,0,0,.45);
+  background-color: rgba(0,0,0,.75);
+  animation: modal .5s;
 
   &__form {
     position: absolute;
@@ -158,15 +189,24 @@
     display: inline-block;
     font-size: 20px;
     font-family: 'Roboto, san-serif';
-    margin: 10px 0;
+    margin: 25px 0;
     border-radius: 8px;
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.4s;
     cursor: pointer;
+    outline-color: #FF8900;
 
     &:hover {
       background-color: #FF8900;
       color: white;
     }
+  }
+
+  &__form-error{
+    color: rgb(236, 168, 168);
+    font-size: 11px;
+    position: absolute;
+    top: 65px;
+    left: 5px;
   }
 }

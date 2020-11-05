@@ -7,6 +7,10 @@
   height: 100%;
   box-sizing: border-box;
 
+  @media(max-width: 1360px){
+    max-width: 1110px;
+  }
+
   &__list{
     display: flex;
     padding-top: 5px;
@@ -40,7 +44,7 @@
       top: 17px;
       content: '';
       display: block;
-      background-color: yellow;
+      background-color:#ffc925;
       height: 2px;
       width: calc(100% + 45%);
     }

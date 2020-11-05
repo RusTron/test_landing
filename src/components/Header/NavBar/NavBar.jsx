@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from 'react';
-import classNames from 'classnames';
 import {  NavLink } from 'react-router-dom';
 import enter from '../../../images/icons/Enter.png'
 import './NavBar.scss';
@@ -101,7 +100,7 @@ export const NavBar = () => {
         </button>
       </nav>
       {modalVisible && (
-        <div className={classNames('login', {'login-active': modalVisible})}>
+        <div className={'login'}>
           <form 
             className="login__form"
             onSubmit={(event)=>sendForm(event)}
