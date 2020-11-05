@@ -1,0 +1,31 @@
+.footerLinks{
+  box-sizing: border-box;
+  margin-left: 95px;
+  display: flex;
+
+  &__block{
+    width: 209px;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  &__block-list{
+    margin-top: 14px;
+    list-style: none;
+    text-align: start;
+    padding: 0;
+
+
+  }
+
+  &__block-item{
+    line-height: 34px;
+    
+  }
+
+  &__block-link{
+    color: #ffffff;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+  }
+}

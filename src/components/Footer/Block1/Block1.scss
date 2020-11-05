@@ -1,0 +1,86 @@
+.footerBlock{
+  width: 575px;
+  box-sizing: border-box;
+
+  &__title{
+    text-align: start;
+    height: 51px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+
+  &__title-text{
+    color: #cbcbcb;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    width: auto;
+    height: 51px;
+    line-height: 51px;
+    display: inline-block;
+    position: relative;
+
+    &:after{
+      position: absolute;
+      display: inline-block;
+      width: 100%;
+      content: '';
+      left: 0;
+      bottom: -1px;
+      border-bottom: 1px solid #ff8500;
+    }
+  }
+
+  &__mail{
+    margin-top: 20px;
+    width: 100%;
+    text-align: start;
+  }
+
+  &__mail-header{
+    color: #cbcbcb;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &__mail-subscribe{
+    color: #ffffff;
+    font-family: "Roboto Black", sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &__mail-form{
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+  }
+
+  &__mail-input{
+    height: 100%;
+    padding: 18px 0 19px 30px;
+    border: none;
+    flex-grow: 1;
+    box-sizing: border-box;
+    color: #9c9c9c;
+    font-family: Roboto, sans-serif;
+    outline: none;
+  }
+
+  &__mail-button{
+    border: none;
+    height: 50px;
+    width: 170px;
+    background-color: #ff8900;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    outline-color: #ff8900
+  }
+}

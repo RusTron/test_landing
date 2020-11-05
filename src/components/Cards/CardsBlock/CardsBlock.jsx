@@ -296,17 +296,17 @@ export const CardsBlock = () => {
         </div>
         <div className="card__buy">
           <button className="card__buy-button">
-            <img src={cardBasket} alt="" className="card__buy-icon"/>
+            <img src={cardBasket} alt="buy-button" className="card__buy-icon"/>
             <span className="card__buy-text">КУПИТЬ ТОВАР</span>
           </button>
         </div>
         <div className="card__select">
           <button className="card__select-button">
-            <img src={cardCompare} alt="" className="card__select-compareImage"/>
+            <img src={cardCompare} alt="compare-image" className="card__select-compareImage"/>
             <span className="card__select-text">Сравнить товар</span>
           </button>
           <button className="card__select-button">
-            <img src={cardStar} alt="" className="card__select-star"/>
+            <img src={cardStar} alt="chosen-image" className="card__select-star"/>
             <span className="card__select-text">Сравнить товар</span>
           </button>
         </div>

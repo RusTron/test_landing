@@ -73,7 +73,8 @@
   overflow: auto;
   outline: 0;
   height: 100%;
-  background-color: rgba(0,0,0,.45);
+  background-color: rgba(53, 36, 36, 0.85);
+  animation: modal .5s;
 
   &__form {
     position: absolute;
@@ -101,6 +102,18 @@
     }
   }
 
+  &__form-input{
+    position: relative;
+  }
+
+  &__form-error{
+    position: absolute;
+    color: rgb(247, 152, 152);
+    font-size: 11px;
+    bottom: 8px;
+    left: 20px;
+  }
+
   &-submit{
     padding: 13px 30px;
     margin: 5px 0 20px 0;
@@ -118,5 +131,15 @@
       background: #fff;
       color: #FF8900;
     }
+  }
+}
+
+@keyframes modal{
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
   }
 }

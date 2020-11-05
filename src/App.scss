@@ -19,3 +19,14 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.App__footer {
+  background-color: #696969;
+  height: 361px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}

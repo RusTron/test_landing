@@ -1,0 +1,76 @@
+.logoBlock{
+  height: 83px;
+  border-top: 1px solid rgba(219,219,219,0.1);
+  display: flex;
+
+  &__logo{
+    margin-top: 30px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    width: 575px;
+  }
+
+  &__logo-image{
+    padding: 3px 22px 0 0;
+    border-right: 1px solid rgba(256,256, 256,0.1);
+  }
+
+  &__logo-copyrith{
+    padding-left: 15px;
+    color: #a0a9b2;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+  }
+
+  &__social{
+    margin-left: 115px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #7b8092;
+    width: 49px;
+    height: 49px;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+
+  &__wezom{
+    margin-left: 225px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__wezom-logo{
+    padding-right: 19px;
+    border-right: 1px solid rgba(256,256, 256,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wezom-description{
+    padding-left: 17px;
+  }
+
+  &__wezom-title{
+    color: #a0a9b2;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    display: block;
+  }
+
+  &__wezom-agency{
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+.activeFrame{
+  border-color: #ffc925;
+}
